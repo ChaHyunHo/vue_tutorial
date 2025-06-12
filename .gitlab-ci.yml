@@ -28,3 +28,4 @@ mirror_to_github:
 #  git fetch origin main - GitLab의 최신 main 브랜치 가져오기
 #  git checkout -B - 가져온 브랜치 기준으로 main 생성 및 전환
 #  git push -f - GitHub의 main 브랜치에 강제로 푸시
+
