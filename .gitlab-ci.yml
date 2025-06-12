@@ -1,0 +1,30 @@
+image:
+  name: klakegg/hugo:0.110.0-ext-alpine
+  entrypoint: [""]
+
+variables:
+  GIT_DEPTH: 0  # shallow clone 방지
+
+stages:
+  - mirror
+
+mirror_to_github:
+  stage: mirror
+  script:
+    - git config --global user.name "ChaHyunHo"
+    - git config --global user.email "chamym@naver.com"
+    - git remote add github https://ChaHyunHo:${GITHUB_TOKEN}@github.com/ChaHyunHo/vue_tutorial.git
+    - git fetch origin main
+    - git checkout -B main origin/main
+    - git push -f github main
+  only:
+    - main
+  tags:
+    - mirror
+
+
+#  git config - 푸시 시 사용할 이름과 이메일 설정
+#  git remote add - GitHub 저장소를 github이라는 이름으로 추가
+#  git fetch origin main - GitLab의 최신 main 브랜치 가져오기
+#  git checkout -B - 가져온 브랜치 기준으로 main 생성 및 전환
+#  git push -f - GitHub의 main 브랜치에 강제로 푸시
