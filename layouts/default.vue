@@ -9,16 +9,8 @@
 		<NuxtPage>
 			<!-- 반드시 있어야 함 -->
 			<div>page content</div>
-			<div>
-				<NuxtLink :to="`${useRuntimeConfig().app.baseURL}counter`"
-					>← CONTER 샘플 페이지</NuxtLink
-				>
-			</div>
-			<div>
-				<NuxtLink :to="`${useRuntimeConfig().app.baseURL}boardlist`"
-					>← BOARD_LIST 샘플 페이지</NuxtLink
-				>
-			</div>
+			<div><NuxtLink to="/counter">← CONTER 샘플 페이지</NuxtLink></div>
+			<div><NuxtLink to="/boardlist">← BOARD_LIST 샘플 페이지</NuxtLink></div>
 		</NuxtPage>
 
 		<!-- 공통 푸터 -->
@@ -41,6 +33,9 @@ header {
 	background: #333;
 	color: white;
 	padding: 1rem;
+}
+
+div {
 }
 
 footer {
