@@ -36,7 +36,7 @@ export default defineNuxtConfig({
 	},
 	//page 정적 페이지를 실제 파일 경로로 생성해줌.
 	nitro: {
-		preset: 'static', // nuxt2.0  target: 'static' 대체
+		// preset: 'static', // nuxt2.0  target: 'static' 대체
 		prerender: {
 			routes: [
 				'/', // index.html
