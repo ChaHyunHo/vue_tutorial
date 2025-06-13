@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
 	ssr: false,
 	app: {
+		baseURL: '/vue-education-9e0354/',
 		head: {
 			title: 'vue 튜토리얼',
 			meta: [
