@@ -1,8 +1,9 @@
 # Nuxt education
 
+**Gitlab Pages Demo**
 <br><br>
 [vue tutoial link](https://dchahyunho-gitlab.duckdns.org/vue-education-9e0354/)
-
+*****
 
 <br/><br/>
 
