@@ -11,6 +11,12 @@
 	</div>
 </template>
 
+<script setup lang="ts">
+onMounted(() => {
+	console.log('this counter page is mounted');
+});
+</script>
+
 <style scoped>
 .admin-header {
 	background: darkred;

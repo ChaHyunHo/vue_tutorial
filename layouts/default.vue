@@ -20,7 +20,11 @@
 	</div>
 </template>
 
-<script setup></script>
+<script setup lang="ts">
+onMounted(() => {
+	console.log('this root page is mounted');
+});
+</script>
 
 <style scoped>
 /* 스타일 정의 */
