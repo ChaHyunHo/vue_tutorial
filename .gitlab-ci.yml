@@ -11,17 +11,16 @@ stages:
 
 pages:
   stage: build
-  script:
+  before_script:
     - corepack enable
     - corepack prepare pnpm@latest --activate
     - pnpm install
-    - pnpm build
+  script:
     - pnpm generate
-    - mkdir -p public/vue-education-9e0354
-    - mv .output/public/* public/vue-education-9e0354
   artifacts:
     paths:
-      - public
+      - .output/public
+  publish: .output/public
   only:
     - main
   tags:
