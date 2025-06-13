@@ -20,12 +20,7 @@
 	</div>
 </template>
 
-<script setup>
-// 필요 시 setup 코드
-onMounted(() => {
-	console.log(`컴포넌트가 마운트 됐습니다.`);
-});
-</script>
+<script setup></script>
 
 <style scoped>
 /* 스타일 정의 */
