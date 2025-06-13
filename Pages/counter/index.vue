@@ -2,7 +2,7 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 definePageMeta({
-	layout: 'counter',
+	layout: 'default',
 });
 
 // 타입이 추론되지만 명시적으로 지정해도 OK

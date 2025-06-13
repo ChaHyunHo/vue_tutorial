@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 definePageMeta({
-	layout: 'board-list',
+	layout: 'default',
 });
 
 interface BoardItemType {
@@ -741,7 +741,7 @@ watchEffect(() => {
 			<div class="col-md-12">
 				<!-- best board list -->
 				<div class="board-list-head">
-					<span class="list-title">VUE 게시판 튜토리얼</span>
+					<span class="list-title">VUE 게시판</span>
 					<span class="pull-right nav-name">
 						<b
 							><i class="fas fa-home"></i> 홈

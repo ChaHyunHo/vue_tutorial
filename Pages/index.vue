@@ -1,3 +1,8 @@
+<script setup lang="ts">
+definePageMeta({
+	layout: 'default',
+});
+</script>
 <template>
 	<div>
 		<h2>Welcome to the Home Page</h2>

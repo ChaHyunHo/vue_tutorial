@@ -2,14 +2,12 @@
 	<div>
 		<!-- 공통 헤더 -->
 		<header>
-			<h1>My App</h1>
+			<h1>Nuxt Tutoial</h1>
 		</header>
 
 		<!-- 페이지 콘텐츠 -->
-		<NuxtPage>
-			<!-- 반드시 있어야 함 -->
-			<slot />
-		</NuxtPage>
+		<!-- 반드시 있어야 함 -->
+		<slot />
 
 		<!-- 공통 푸터 -->
 		<footer>
