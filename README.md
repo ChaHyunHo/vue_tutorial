@@ -1,5 +1,9 @@
 # Nuxt education
 
+<br><br>
+[vue tutoial link](https://dchahyunho-gitlab.duckdns.org/vue-education-9e0354/)
+
+
 <br/><br/>
 
 타입스크립트와 자주 쓰는 생명주기 훅
