@@ -2,7 +2,14 @@
 export default defineNuxtConfig({
 	ssr: false,
 	app: {
-		baseURL: '/vue-education-9e0354/',
+		target: 'static', // static site 호스팅을 위한 설정
+		generate: {
+			dir: 'public', // generate 한 결과물이 들어갈 폴더
+		},
+		router: {
+			base: '/vue-education-9e0354/',
+		},
+		// baseURL: '/vue-education-9e0354/',
 		head: {
 			title: 'vue 튜토리얼',
 			meta: [
