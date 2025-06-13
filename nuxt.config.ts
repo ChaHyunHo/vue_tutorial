@@ -34,6 +34,17 @@ export default defineNuxtConfig({
 			],
 		},
 	},
+	//page 정적 페이지를 실제 파일 경로로 생성해줌.
+	nitro: {
+		prerender: {
+			routes: [
+				'/', // index.html
+				'/counter', // counter.html
+				'/boardlist', // boardlist.html
+			],
+		},
+	},
+
 	compatibilityDate: '2025-05-15',
 	devtools: { enabled: true },
 	css: [
