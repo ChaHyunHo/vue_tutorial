@@ -21,6 +21,8 @@ pages:
       - public
   only:
     - main
+  tags:
+    - board
 
 mirror_to_github:
   stage: mirror
