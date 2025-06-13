@@ -2,7 +2,7 @@
 	<div>
 		<!-- 공통 헤더 -->
 		<header>
-			<h1>My App</h1>
+			<h1>Vue Tutorial</h1>
 		</header>
 
 		<!-- 페이지 콘텐츠 -->
