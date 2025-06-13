@@ -9,8 +9,8 @@
 		<NuxtPage>
 			<!-- 반드시 있어야 함 -->
 			<div>page content</div>
-			<div><NuxtLink to="/admin">← ADMIN PAGE LINK</NuxtLink></div>
-			<div><NuxtLink to="/counter">← CONTER PAGE LINK</NuxtLink></div>
+			<div><NuxtLink to="/counter">← CONTER 샘플 페이지</NuxtLink></div>
+			<div><NuxtLink to="/boardlist">← BOARD_LIST 샘플 페이지</NuxtLink></div>
 		</NuxtPage>
 
 		<!-- 공통 푸터 -->
