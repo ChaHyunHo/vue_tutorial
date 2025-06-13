@@ -1,4 +1,6 @@
-image: node:18
+image:
+  name: node:18
+  entrypoint: [""]
 
 variables:
   GIT_DEPTH: 0  # shallow clone 방지
