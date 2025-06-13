@@ -9,7 +9,7 @@
 
 **Nuxt Gitlab Pages Demo**
 <br><br>
-[vue tutoial link](https://dchahyunho-gitlab.duckdns.org/vue-education-9e0354/)
+[eploy your Nuxt Application to GitLab Pages.](https://nuxt.com/deploy/gitlab)
 *****
 
 <br/><br/>
