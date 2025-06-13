@@ -371,7 +371,12 @@ watchEffect(() => {
 											</h5>
 										</div>
 										<form class="form" name="searchtotal" role="form">
-											<input type="hidden" name="searchType" />
+											<input
+												type="hidden"
+												name="searchType"
+												value="T"
+												disabled
+											/>
 											<input type="hidden" name="andOr" />
 											<div class="row searchrow">
 												<div class="col-xs-6 search-padding">
@@ -380,11 +385,11 @@ watchEffect(() => {
 														name="searchoption"
 													>
 														<option value="T">제목</option>
-														<option value="C">내용</option>
-														<option value="N">이름</option>
-														<option value="TC">제목+내용</option>
-														<option value="CN">내용+이름</option>
-														<option value="TCN">제목+내용+이름</option>
+														<!--														<option value="C">내용</option>-->
+														<!--														<option value="N">이름</option>-->
+														<!--														<option value="TC">제목+내용</option>-->
+														<!--														<option value="CN">내용+이름</option>-->
+														<!--														<option value="TCN">제목+내용+이름</option>-->
 													</select>
 												</div>
 												<div class="col-xs-6 search-padding">
