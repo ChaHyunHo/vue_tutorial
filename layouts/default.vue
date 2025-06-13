@@ -29,9 +29,6 @@ header {
 	padding: 1rem;
 }
 
-div {
-}
-
 footer {
 	background: #f0f0f0;
 	padding: 1rem;
