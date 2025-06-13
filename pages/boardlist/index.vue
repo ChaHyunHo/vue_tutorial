@@ -4,6 +4,12 @@ definePageMeta({
 	layout: 'default',
 });
 
+const router = useRouter();
+
+const onClickGoToDetailHandler = () => {
+	router.push('/boardDetail');
+};
+
 interface BoardItemType {
 	bno: string;
 	title: string;
@@ -624,7 +630,7 @@ const boardItems = ref<BoardItemType[]>(getBoardList());
 
 // 페이징 관련 상태 및 계산
 const currentPage = ref(1);
-const itemsPerPage = 10;
+const itemsPerPage = 30;
 
 const paginatedItems = computed(() => {
 	const start = (currentPage.value - 1) * itemsPerPage;
@@ -741,11 +747,11 @@ watchEffect(() => {
 			<div class="col-md-12">
 				<!-- best board list -->
 				<div class="board-list-head">
-					<span class="list-title">VUE 게시판</span>
+					<span class="list-title">게시글 목록</span>
 					<span class="pull-right nav-name">
 						<b
 							><i class="fas fa-home"></i> 홈
-							<i class="fas fa-angle-right"></i> 게시판 리스트
+							<i class="fas fa-angle-right"></i> 게시글 목록
 						</b>
 					</span>
 				</div>
@@ -790,7 +796,7 @@ watchEffect(() => {
 									>
 										<div class="board-num">{{ item.bno }}</div>
 										<div class="board-title">
-											<a href="#">
+											<a href="#" @click.prevent="onClickGoToDetailHandler">
 												<span
 													class="pull-right"
 													style="color: rgb(255, 130, 71)"
