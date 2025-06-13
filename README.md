@@ -9,7 +9,7 @@
 
 **Nuxt Gitlab Pages Demo**
 <br><br>
-[eploy your Nuxt Application to GitLab Pages.](https://nuxt.com/deploy/gitlab)
+[Deploy your Nuxt Application to GitLab Pages.](https://nuxt.com/deploy/gitlab)
 *****
 
 <br/><br/>
