@@ -17,7 +17,8 @@ pages:
     - pnpm install
     - pnpm build
     - pnpm generate
-    - mv .output/public public  # Nuxt3 기준 출력 디렉토리
+    - mkdir -p public/vue-education-9e0354
+    - mv .output/public/* public/vue-education-9e0354
   artifacts:
     paths:
       - public
