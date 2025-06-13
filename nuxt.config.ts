@@ -2,14 +2,7 @@
 export default defineNuxtConfig({
 	ssr: false,
 	app: {
-		target: 'static', // static site 호스팅을 위한 설정
-		generate: {
-			dir: 'public', // generate 한 결과물이 들어갈 폴더
-		},
-		router: {
-			base: '/vue-education-9e0354/',
-		},
-		// baseURL: '/vue-education-9e0354/',
+		baseURL: '/vue-education-9e0354/',
 		head: {
 			title: 'vue 튜토리얼',
 			meta: [
@@ -43,6 +36,7 @@ export default defineNuxtConfig({
 	},
 	//page 정적 페이지를 실제 파일 경로로 생성해줌.
 	nitro: {
+		preset: 'static', // nuxt2.0  target: 'static' 대체
 		prerender: {
 			routes: [
 				'/', // index.html
